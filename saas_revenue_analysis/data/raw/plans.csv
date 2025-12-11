@@ -1,7 +1,0 @@
-plan_id,plan_name,billing_period,price_usd
-1,Basic,monthly,29.0
-2,Standard,monthly,59.0
-3,Premium,monthly,119.0
-4,Basic,annual,299.0
-5,Standard,annual,599.0
-6,Premium,annual,1199.0

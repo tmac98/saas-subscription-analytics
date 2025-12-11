@@ -1,8 +1,0 @@
-pandas
-numpy
-python-dateutil
-matplotlib
-seaborn
-scikit-learn
-statsmodels
-
