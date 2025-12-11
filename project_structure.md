@@ -67,7 +67,7 @@ High resolution exports of the final dashboards:
 
 ---
 
-## pdf/
+## report/
 
 ### `SaaS_Subscription_Analytics_Report.pdf`
 Written summary of main findings.
