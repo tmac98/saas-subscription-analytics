@@ -44,7 +44,7 @@ This project follows a simple analytical workflow:
 - **sql/** — Cohort creation, retention, MRR, churn, and LTV logic  
 - **notebooks/** — Cleaning, analysis, segmentation, forecasting, and insights  
 - **dashboard/** — Revenue & retention dashboard + screenshots  
-- **pdf/** — Final insights report  
+- **report/** — Final insights report  
 
 ---
 
