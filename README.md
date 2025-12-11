@@ -1,74 +1,57 @@
-# Project Structure
+# SaaS Revenue Analysis
 
-Below is a description of each folder and file in the project.
+This project examines the revenue performance, customer retention, pricing behaviour, and churn dynamics of a fictional subscription-based software company. The analysis focuses on understanding the stability of recurring revenue, identifying risks to growth, and highlighting commercial opportunities across customer segments and pricing tiers.
 
----
+The company operates on a monthly and annual subscription model with three plan levels. Customers upgrade, downgrade, renew, and churn in ways that reflect realistic subscription behaviour.
 
-## Root Files
+The outputs of this project include:
 
-### `README.md`
-Project overview and objectives.
+- Cohort retention tables and visualisations  
+- MRR and ARR breakdowns  
+- Gross and net churn metrics  
+- Lifetime value (LTV) analysis  
+- Pricing and plan performance insights  
+- Revenue forecasting
 
-### `project_structure.md`
-This document.
-
-### `requirements.txt`
-Python dependencies.
-
----
-
-## data/
-
-Stores all generated datasets.
-
-### `data/raw/`
-Synthetic base tables:
-- customers
-- subscription plans
-- subscriptions
-
-### `data/processed/`
-Cleaned and enriched datasets used for analysis, modelling, and dashboards.
+All data used in this project is synthetic but constructed to reflect patterns commonly observed in SaaS businesses.
 
 ---
 
-## sql/
+## 📦 Workflow Overview
 
-SQL files used for revenue, retention, and cohort analysis:
+This project follows a simple analytical workflow:
 
-- `01_create_cohorts.sql`
-- `02_retention_by_month.sql`
-- `03_mrr_breakdown.sql`
-- `04_ltv.sql`
-- `05_churn_analysis.sql`
+1. Synthetic subscription and customer data is generated in  
+   `notebooks/01_data_cleaning.ipynb`  
+   and written to `data/raw/` and `data/processed/`.
 
----
+2. SQL scripts in the `sql/` directory are used to create cohorts, compute retention,
+   calculate MRR components, model churn, and estimate LTV.
 
-## notebooks/
+3. The analysis notebooks (`notebooks/`) contain exploratory work, visualisations,
+   pricing segmentation, and forecasting based on the processed tables.
 
-Python notebooks for data preparation and analysis:
+4. The dashboards (in `dashboard/`) provide a view of
+   subscription performance, revenue trends, and cohort behaviour.
 
-- `01_data_cleaning.ipynb`
-- `02_retention_analysis.ipynb`
-- `03_mrr_forecasting.ipynb`
-- `04_pricing_segmentation.ipynb`
-- `05_final_insights.ipynb`
+5. Key findings are summarised in the insights report (`pdf/insights_report.pdf`).
 
 ---
 
-## dashboard/
+## 📂 Project Contents
 
-Business intelligence assets generated from Tableau.
-
-### `dashboard/pdfs/`
-High resolution exports of the final dashboards:
-- **SAAS Revenue Overview.pdf**  
-- **Retention & Churn Health.pdf**
+- **data/** — Raw and processed synthetic datasets  
+- **sql/** — Cohort creation, retention, MRR, churn, and LTV logic  
+- **notebooks/** — Cleaning, analysis, segmentation, forecasting, and insights  
+- **dashboard/** — Revenue & retention dashboard + screenshots  
+- **pdf/** — Final insights report  
 
 ---
 
-## pdf/
+## 📝 Notes
 
-### `SaaS_Subscription_Analytics_Report.pdf`
-Written summary of main findings.
+- All numbers are fictional and for analytical demonstration only.  
+- The focus is on replicating the type of revenue and customer analytics used by SaaS companies.  
+- No external setup is required; outputs are included directly in the repository.
+
 
